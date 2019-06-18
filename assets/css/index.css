@@ -30,6 +30,11 @@ body {
 .clearfix {
   overflow: auto;
 }
+
+
+
+/* Header */
+
 .header {
   width: 100%;
   height: fit-content;
@@ -40,17 +45,16 @@ body {
 }
 .logo-container {
   display: inline-block;
-  padding: 10px 0;
+  padding: 15px 0;
+  margin-top: 1px;
 }
 .logo-container img.logo {
-  height: auto;
-  width: 100px;
+  height: 40px;
+  width: auto;
 }
 .instruct {
   float: right;
-  margin-top: 15px;
-  /* vertical-align: super;
-  -webkit-vertical-align: super; */
+  margin-top: 24px;
   max-width: 400px;
   display: inline-block;
 }
@@ -62,31 +66,8 @@ body {
   opacity: 0.7;
   font-family: Arial;
 }
-@media all and (max-width: 750px) {
-  .s-container {
-    width: 90%;
-  }
-  .justifier {
-    text-align: center !important;
-  }
-  .logo-container img.logo {
-    height: 36px;
-    width: 100px;
-    background: rgb(116, 115, 115);
-  }
-  .instruct {
-    float: none;
-    display: block;
-    width: 100%;
-    padding: 20px;
-    max-width: unset;
-    margin-top: 0;
-  }
-  .instruct p.instruction {
-    text-align: center;
-  }
-}
 
+/* cta */
 
 .cta-1 {
   padding-top: 50px;
@@ -132,7 +113,7 @@ body {
 }
 .cta-btn-container {
   height: 70px;
-  width: 305px;
+  width: 310px;
 }
 a.cta-btn {
   position: relative;
@@ -302,19 +283,64 @@ a.cta-btn:hover {
 .f-heading h1 {
   margin-left: 30px;
   display: inline-block;
-  max-width: 200px;
+  max-width: 150px;
   font-size: 24px;
   font-weight: bold;
   color: #333333;
+}
+.f-body {
+  height: fit-content;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .f-body p {
   text-align: left;
   font-size: 18px;
   line-height: 1.33;
   color: #777777;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  height: 120px;
 }
 .in-feature-btn {
    margin-top: 30px;
+}
+
+
+.footer {
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+.google-ad-info {
+  width: 100%;
+}
+.google-ad-info p {
+  text-align: center;
+  font-size: 10px;
+  color: #777777;
+}
+.footer-nav {
+  padding-top: 30px;
+  width: 100%;
+  text-align: center;
+}
+.footer-nav ul {
+  list-style: none;
+}
+.footer-nav ul li {
+  display: inline-block;
+  border-right: 1px solid #777;
+}
+.footer-nav ul li:last-child {
+  border: none;
+}
+.footer-nav ul li a {
+  font-size: 12px;
+  display: block;
+  text-align: center;
+  color: #777777;
+  padding: 0 15px;
+  text-decoration: none;
+  transition: all .3s ease;
+}
+.footer-nav ul li a:hover {
+  text-decoration: underline;
 }

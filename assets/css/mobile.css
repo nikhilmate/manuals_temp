@@ -50,7 +50,24 @@
     line-height: 24px;
     font-size: 14px;
   }
-  
+  .i {
+    width: 100%;
+    text-align: center !important;
+    padding: 0 10%;
+  }
+  .i-box {
+    display: block;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .i-box:nth-child(2n) {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .i-box img {
+    width: 100%;
+    height: auto;
+  }
 }
 
 @media all and (max-width: 500px) {
@@ -69,4 +86,24 @@
     margin: 0 auto;
     display: block;
   }
+  .steps {
+    display: block;
+    width: 100%;
+    padding: 20px;
+  }
+  .steps:nth-child(2n) {
+    border: none;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+  }
+  .step-text {
+    padding: 20px;
+  }
+  .step-text-container {
+    padding: 0 10%;
+    width: 100%;
+    text-align: center !important;
+    margin: 0 auto;
+
+}
 }

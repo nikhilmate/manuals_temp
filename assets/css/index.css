@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Merriweather+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700&display=swap');
 
 html {
   font-weight: normal;
@@ -71,7 +71,9 @@ body {
   opacity: 0.7;
   font-family: Arial;
 }
-
+.instruct .policy-link {
+  color: #131313;
+}
 /* cta */
 
 .cta-1 {

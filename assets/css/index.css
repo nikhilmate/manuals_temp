@@ -163,6 +163,7 @@ a.cta-btn:hover {
           transform: scale(0.96);
   -webkit-box-shadow: 0 25px 6px -20px #b1b1b4;
           box-shadow: 0 25px 6px -20px #b1b1b4;
+          background: #006c4e;
 }
 
 
@@ -183,6 +184,7 @@ a.cta-btn:hover {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  max-width: 230px;
   margin: 0 auto;
   padding: 5px 35px;  
   font-size: 14px;
@@ -445,7 +447,7 @@ a.cta-btn:hover {
     text-align: center;
   }
   .cta-instruct {
-    max-width: unset;
+    max-width: none;
   }
   .cta-instruct h2 {
     max-width: 400px;

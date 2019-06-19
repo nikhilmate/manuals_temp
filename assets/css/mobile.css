@@ -1,14 +1,28 @@
-@media all and (max-width: 1000px) {
+@media all and (max-width: 1200px) {
   .feature-box {
     margin: 0;
   }
   .feature-box:nth-child(2n) {
     margin: 0;
   }
+  .feature-box:nth-child(n) {
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  .feature-box:first-child {
+    margin-right: 30px;
+  }
 }
 @media all and (max-width: 900px) {
   .s-container, .row-54 {
     width: 90%;
+  }
+  .feature-box {
+    display: block;
+  }
+  .feature-box:first-child {
+    margin: 0 auto;
+    margin-bottom: 30px;
   }
 }
 @media all and (max-width: 750px) {
@@ -43,7 +57,7 @@
     margin: 0 auto;
     text-align: center;
   }
-  a.cta-btn {
+  a.primary-btn.cta-btn {
     margin: 0 auto;
     margin-top: 20px;
   }
@@ -98,6 +112,7 @@
     display: block;
     width: 100%;
     padding: 20px;
+    text-align: center !important;
   }
   .steps:nth-child(2n) {
     border: none;
@@ -112,5 +127,21 @@
     width: 100%;
     text-align: center !important;
     margin: 0 auto;
+  }
+}
+
+@media all and (max-width: 400px) {
+  a.cta-btn {
+    font-size: 20px;
+    letter-spacing: 1.2px;
+    box-shadow: 0 25px 15px -20px #b1b1b4;
+    padding: 20px 30px;
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .feature-box {
+    max-width: auto;
+    padding: 15px;
   }
 }

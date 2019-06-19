@@ -1,3 +1,11 @@
+@media all and (max-width: 1000px) {
+  .feature-box {
+    margin: 0;
+  }
+  .feature-box:nth-child(2n) {
+    margin: 0;
+  }
+}
 @media all and (max-width: 900px) {
   .s-container, .row-54 {
     width: 90%;
@@ -104,6 +112,5 @@
     width: 100%;
     text-align: center !important;
     margin: 0 auto;
-
-}
+  }
 }

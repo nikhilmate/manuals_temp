@@ -24,7 +24,7 @@ body {
 }
 .m-container {
   max-width: 1200px;
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
 }
 .clearfix {
@@ -258,7 +258,7 @@ a.cta-btn:hover {
   text-align: center;
 }
 .feature-box {
-  width: 30%;
+  max-width: 370px;
   display: inline-block;
   border-radius: 4px;
   border: solid 1px #e6e8ec;
@@ -302,6 +302,9 @@ a.cta-btn:hover {
 }
 .in-feature-btn {
    margin-top: 30px;
+}
+.responsive-btn {
+  border: 2px solid red;
 }
 
 

@@ -414,7 +414,7 @@ a.cta-btn:hover {
 }
 @media all and (max-width: 900px) {
   .s-container, .row-54 {
-    width: 90%;
+    width: 80%;
   }
   .feature-box {
     display: block;
@@ -497,6 +497,9 @@ a.cta-btn:hover {
     width: 100%;
     padding-left: 15px;
     padding-right: 15px;
+  }
+  .s-container, .row-54 {
+    width: 90%;
   }
   .instruct {
     padding: 0;

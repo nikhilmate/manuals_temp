@@ -74,6 +74,9 @@ body {
 .instruct .policy-link {
   color: #131313;
 }
+.instruct .policy-link:hover {
+  text-decoration: none;
+}
 /* cta */
 
 .cta-1 {
@@ -137,6 +140,7 @@ a.cta-btn {
   position: relative;
   font-size: 24px;
   font-weight: bold;
+  line-height: normal;
   letter-spacing: 1.8px;
   color: #ffffff;
   border-radius: 3px;
@@ -167,7 +171,15 @@ a.cta-btn:hover {
           box-shadow: 0 25px 6px -20px #b1b1b4;
           background: #006c4e;
 }
-
+img.btn-icon {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  margin-left: 46px;
+  height: 18px;
+  border: none;
+  outline: none;
+}
 
 
 
@@ -229,8 +241,8 @@ a.cta-btn:hover {
   text-align: left !important;
 }
 .steps:nth-child(2n) {
-  border-left: 1px solid grey;
-  border-right: 1px solid grey;
+  border-left: 1px solid rgba(151, 151, 151, 0.28);
+  border-right: 1px solid rgba(151, 151, 151, 0.28);
 }
 .step-no {
   color: #318bb6;
@@ -481,14 +493,20 @@ a.cta-btn:hover {
     display: block;
     width: 100%;
     margin-bottom: 50px;
+    text-align: center !important;
+  }
+  .i-box:last-child {
+    margin-bottom: 0px;
   }
   .i-box:nth-child(2n) {
     padding-right: 0;
     padding-left: 0;
   }
-  .i-box img {
-    width: 100%;
+  .f-body p {
     height: auto;
+  }
+  .f-center {
+    padding: 0 10px 0 10px;
   }
 }
 
@@ -542,10 +560,35 @@ a.cta-btn:hover {
     padding: 20px 30px;
     width: 100%;
     height: auto;
+    line-height: 100%;
     display: block;
+  }
+  img.btn-icon {
+    height: 14px;
   }
   .feature-box {
     max-width: auto;
     padding: 15px;
+  }
+}
+@media all and (max-width: 350px) {
+  a.cta-btn {
+    letter-spacing: 1px;
+    padding: 20px 20px;
+  }
+  img.btn-icon {
+    margin-left: 30px;
+  }
+  .f-heading h1 {
+    margin-left: 20px;
+    max-width: 150px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #333333;
+  }
+  .f-body p {
+    text-align: left;
+    font-size: 16px;
+    line-height: 1.3;
   }
 }

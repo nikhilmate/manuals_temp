@@ -35,4 +35,4 @@ if (isFirefox) {
   removed.style.height = "0";
   var footer = document.querySelector(".footer");
   footer.style.paddingTop = "10px";
-}   
+}

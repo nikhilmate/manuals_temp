@@ -45,9 +45,7 @@ body {
   -webkit-box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.12);
           box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.12);
 }
-.justifier {
-  text-align: justify;
-}
+
 .logo-container {
   display: inline-block;
   padding: 15px 0;
@@ -61,7 +59,6 @@ body {
   float: right;
   margin-top: 24px;
   max-width: 400px;
-  display: inline-block;
 }
 .instruct p.instruction {
   font-size: 10px;
@@ -408,19 +405,23 @@ img.btn-icon {
 }
 
 
-@media all and (max-width: 1200px) {
-  .feature-box {
-    margin: 0;
+@media all and (max-width: 1250px) {
+  .f-center {
+    width: 90%;
+    margin: 0 auto;
   }
-  .feature-box:nth-child(2n) {
+  .feature-box {
     margin: 0;
   }
   .feature-box:nth-child(n) {
     margin: 0 auto;
     margin-bottom: 30px;
   }
-  .feature-box:first-child {
-    margin-right: 30px;
+  .feature-box:nth-child(2n) {
+    margin-left: 20px;
+  }
+  .feature-box:last-child {
+    margin-bottom: 0;
   }
 }
 @media all and (max-width: 900px) {
@@ -430,7 +431,15 @@ img.btn-icon {
   .feature-box {
     display: block;
   }
+  .f-center {
+    width: 100%;
+    margin: 0;
+  }
   .feature-box:first-child {
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  .feature-box:nth-child(2n) {
     margin: 0 auto;
     margin-bottom: 30px;
   }
@@ -512,7 +521,7 @@ img.btn-icon {
   }
 }
 
-@media all and (max-width: 500px) {
+@media all and (max-width: 540px) {
   .s-container {
     width: 100%;
     padding-left: 15px;

@@ -32,7 +32,4 @@ var isFirefox = typeof InstallTrigger !== 'undefined';
 if (isFirefox) {
   var removed = document.querySelector(".chrome-desclaimer");
   removed.style.display = "none";
-  removed.style.height = "0";
-  var footer = document.querySelector(".footer");
-  footer.style.paddingTop = "10px";
 }

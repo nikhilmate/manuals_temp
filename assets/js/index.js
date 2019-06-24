@@ -24,7 +24,7 @@ var isFirefox = typeof InstallTrigger !== 'undefined';
 // var isEdge = !isIE && !!window.StyleMedia;
 
 // // Chrome 1 - 71
-// var isChrome = !!window.chrome && (!!window.chrome.webstore || !!window.chrome.runtime);
+var isChrome = !!window.chrome && (!!window.chrome.webstore || !!window.chrome.runtime);
 
 // // Blink engine detection
 // var isBlink = (isChrome || isOpera) && !!window.CSS;
@@ -32,4 +32,12 @@ var isFirefox = typeof InstallTrigger !== 'undefined';
 if (isFirefox) {
   var removed = document.querySelector(".chrome-desclaimer");
   removed.style.display = "none";
+}
+
+if (isChrome) {
+  var desclaimer = document.querySelector(".instruct");
+  desclaimer.style.display = "block";
+} else {
+  var desclaimer = document.querySelector(".instruct");
+  desclaimer.style.display = "none";
 }

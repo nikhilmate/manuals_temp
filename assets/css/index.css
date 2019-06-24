@@ -58,12 +58,11 @@ body {
 .instruct {
   float: right;
   margin-top: 24px;
-  max-width: 400px;
+  max-width: 415px;
 }
 .instruct p.instruction {
   font-size: 10px;
   line-height: 14px;
-  text-align: justify;
   color: #131313; 
   opacity: 0.7;
   font-family: Arial;
@@ -460,6 +459,8 @@ img.btn-icon {
     max-width: unset;
     margin-top: 0;
     text-align: center;
+    margin-right: auto;
+    margin-left: auto;
   }
   .instruct p.instruction {
     text-align: center;

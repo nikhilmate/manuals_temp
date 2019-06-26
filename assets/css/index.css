@@ -48,7 +48,7 @@ body {
 
 .logo-container {
   display: inline-block;
-  padding: 15px 0;
+  padding: 15px 20px 15px 0;
   margin-top: 1px;
 }
 .logo-container img.logo {
@@ -66,6 +66,9 @@ body {
   color: #131313; 
   opacity: 0.7;
   font-family: Arial;
+}
+.instruct span.disclaimer-remove {
+  display: inline;
 }
 .instruct .policy-link {
   color: #131313;
@@ -362,7 +365,6 @@ img.btn-icon {
 
 
 .footer {
-  padding-top: 50px;
   padding-bottom: 30px;
 }
 .google-ad-info {
@@ -372,6 +374,7 @@ img.btn-icon {
   text-align: center;
   font-size: 10px;
   color: #777777;
+  margin-top: 40px;
 }
 .footer-nav {
   padding-top: 30px;
@@ -404,7 +407,7 @@ img.btn-icon {
 }
 
 
-@media all and (max-width: 1250px) {
+@media screen and (max-width: 1250px) {
   .f-center {
     width: 90%;
     margin: 0 auto;
@@ -423,9 +426,17 @@ img.btn-icon {
     margin-bottom: 0;
   }
 }
-@media all and (max-width: 900px) {
+@media screen and (max-width: 1200px) {
+  .header .s-container {
+    width: 85%;
+  }
+}
+@media screen and (max-width: 900px) {
   .s-container, .row-54 {
     width: 80%;
+  }
+  .header .s-container {
+    width: 85%;
   }
   .feature-box {
     display: block;
@@ -446,7 +457,12 @@ img.btn-icon {
     margin-left: 36px;
   }
 }
-@media all and (max-width: 750px) {
+@media screen and (max-width: 900px) and (min-width: 750px) {
+  .cta-instruct {
+    padding-right: 20px;
+  }
+}
+@media screen and (max-width: 750px) {
   .justifier {
     text-align: center !important;
   }
@@ -522,7 +538,7 @@ img.btn-icon {
   }
 }
 
-@media all and (max-width: 540px) {
+@media screen and (max-width: 540px) {
   .s-container {
     width: 100%;
     padding-left: 15px;
@@ -563,7 +579,7 @@ img.btn-icon {
   }
 }
 
-@media all and (max-width: 400px) {
+@media screen and (max-width: 400px) {
   a.cta-btn {
     font-size: 20px;
     letter-spacing: 1.2px;
@@ -583,7 +599,7 @@ img.btn-icon {
     padding: 15px;
   }
 }
-@media all and (max-width: 350px) {
+@media screen and (max-width: 350px) {
   a.cta-btn {
     letter-spacing: 1px;
     padding: 20px 20px;
